@@ -6,7 +6,7 @@ const App: React.FC = () => {
     ];
 
     const distributionFiles = [
-        { name: "Release File", link: "/r2ppa/apt-repo/dists/stable/Release" },
+        { name: "Release File", link: "./../.././r2ppa/apt-repo/dists/stable/Release" },
         { name: "Release GPG Signature", link: "/r2ppa/apt-repo/dists/stable/Release.gpg" },
         { name: "InRelease File", link: "/r2ppa/apt-repo/dists/stable/InRelease" }
     ];
