@@ -2,7 +2,7 @@ import React from 'react';
 
 const App: React.FC = () => {
     const distributions = [
-        { name: "Stable", link: "/R2PPA/r2ppa/apt-repo/dists/stable/" }
+        { name: "Stable", link: "/r2ppa/apt-repo/dists/stable/" }
     ];
 
     const distributionFiles = [
@@ -12,8 +12,8 @@ const App: React.FC = () => {
     ];
 
     const packages = [
-        { name: "ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb", link: "/R2PPA/r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb" },
-        { name: "ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb", link: "/R2PPA/r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb" }
+        { name: "ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb", link: "/r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb" },
+        { name: "ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb", link: "/r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb" }
     ];
 
     return (
