@@ -1,58 +1,44 @@
-import React from 'react';
+import React from "react";
+import { PackageSearch } from "lucide-react";
+import Table from "./components/Table";
+import Instruction from "./components/Instruction";
 
 const App: React.FC = () => {
-    const distributions = [
-        { name: "Stable", link: "./../.././r2ppa/apt-repo/dists/stable/" }
-    ];
+  return (
+    <div className="select-none h-screen w-screen flex flex-col justify-center items-center overflow-scroll scrollbar-hidden">
+      <div className="w-[80vw] h-full flex flex-col">
 
-    const distributionFiles = [
-        { name: "Release File", link: "./../.././r2ppa/apt-repo/dists/stable/Release" },
-        { name: "Release GPG Signature", link: "./../.././r2ppa/apt-repo/dists/stable/Release.gpg" },
-        { name: "InRelease File", link: "./../.././r2ppa/apt-repo/dists/stable/InRelease" }
-    ];
+        <div className="text-[45px] h-[65px] uppercase mb-0">r2ppa</div> 
 
-    const packages = [
-        { name: "ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb", link: "./../.././r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb" },
-        { name: "ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb", link: "./../.././r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb" }
-    ];
 
-    return (
-        <div className="p-6 bg-gray-50 rounded-lg shadow-md">
-            <h1 className="text-2xl font-bold text-gray-800">Welcome to the APT Repository</h1>
-            <p className="text-gray-700">This is the main entry point of the APT repository. Below are the available distributions and packages:</p>
+        <div className="flex flex-col gap-y-3 h-full mb-3 scrollbar-hidden">
+          <Instruction />
 
-            <h2 className="mt-4 text-xl font-semibold text-gray-800">Distributions</h2>
-            <ul className="list-disc list-inside">
-                {distributions.map((dist, index) => (
-                    <li key={index}>
-                        <a href={dist.link} className="text-blue-600 hover:underline">{dist.name}</a>
-                    </li>
-                ))}
-            </ul>
-
-            <h2 className="mt-4 text-xl font-semibold text-gray-800">Distribution Files</h2>
-            <ul className="list-disc list-inside">
-                {distributionFiles.map((file, index) => (
-                    <li key={index}>
-                        <a href={file.link} className="text-blue-600 hover:underline">{file.name}</a>
-                    </li>
-                ))}
-            </ul>
-
-            <h2 className="mt-4 text-xl font-semibold text-gray-800">Packages in Main Pool</h2>
-            <ul className="list-disc list-inside">
-                {packages.map((pkg, index) => (
-                    <li key={index}>
-                        <a href={pkg.link} className="text-blue-600 hover:underline">{pkg.name}</a>
-                    </li>
-                ))}
-            </ul>
-
-            <div className="mt-6 text-gray-500 text-sm">
-                <p>&copy; 2024 APT Repository. All rights reserved.</p>
+          <div className="sticky top-0 z-10 flex flex-col flex-grow bg-[#bababb]/40 rounded-[20px] pb-4 max-h-[100vh]">
+            <div className=" z-10 flex flex-row items-center justify-end p-2">
+              <div className="mr-2 flex items-center gap-x-2">
+              <div className="text-3xl uppercase ">r2ppa</div>
+                <input
+                  type="text"
+                  placeholder="Search packages"
+                  className="px-3 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+                />
+                <div>
+                  <PackageSearch />
+                </div>
+              </div>
             </div>
+
+            <div className="flex-grow overflow-y-scroll scrollbar-hidden">
+
+              <Table />
+         
+            </div>   
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default App;
