@@ -2,18 +2,18 @@ import React from 'react';
 
 const App: React.FC = () => {
     const distributions = [
-        { name: "Stable", link: "/r2ppa/apt-repo/dists/stable/" }
+        { name: "Stable", link: "./r2ppa/apt-repo/dists/stable/" }
     ];
 
     const distributionFiles = [
-        { name: "Release File", link: "/r2ppa/apt-repo/dists/stable/Release" },
-        { name: "Release GPG Signature", link: "/r2ppa/apt-repo/dists/stable/Release.gpg" },
-        { name: "InRelease File", link: "/r2ppa/apt-repo/dists/stable/InRelease" }
+        { name: "Release File", link: "./r2ppa/apt-repo/dists/stable/Release" },
+        { name: "Release GPG Signature", link: "./r2ppa/apt-repo/dists/stable/Release.gpg" },
+        { name: "InRelease File", link: "./r2ppa/apt-repo/dists/stable/InRelease" }
     ];
 
     const packages = [
-        { name: "ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb", link: "/r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb" },
-        { name: "ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb", link: "/r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb" }
+        { name: "ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb", link: "./r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb" },
+        { name: "ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb", link: "./r2ppa/apt-repo/pool/main/binary-amd64/ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb" }
     ];
 
     return (
