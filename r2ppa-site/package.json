@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "generate-packages": "cd ..; bash generate_packages_list.sh",
     "build": "tsc -b && vite build",
+    "build:full": "npm run generate-packages && npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

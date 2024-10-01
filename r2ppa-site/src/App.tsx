@@ -14,10 +14,15 @@ const App: React.FC = () => {
       <div className="w-[80vw] h-full flex flex-col">
         
 
-        <div className="flex flex-row items-center gap-2 p-1">
-          <Boxes size={30}/>
-        <div className="text-3xl  uppercase mb-1">r2ppa</div>
-        </div>
+      <div className="flex flex-row items-end gap-2 p-1 justify-between">
+
+        <div className="flex flex-row items-center gap-2">
+  <Boxes size={30} />
+  <div className="text-3xl uppercase">r2ppa</div> </div>
+  <div className="text-red-500 ">
+    This PPA is intended for my personal use, but if you're interested, proceed with caution!
+  </div>
+</div>
         <div className="flex flex-col gap-y-3 h-full scrollbar-hidden">
           <Instruction />
 
