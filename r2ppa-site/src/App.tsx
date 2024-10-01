@@ -20,7 +20,8 @@ const App: React.FC = () => {
   <Boxes size={30} />
   <div className="text-3xl uppercase">r2ppa</div> </div>
   <div className="text-red-500 ">
-    This PPA is intended for my personal use, but if you're interested, proceed with caution!
+    This PPA is intended for <a href="https://github.com/RishikesavanRamesh/" className="text-purple-600 underline"             target="_blank" 
+            rel="noopener noreferrer" >my</a> personal use, but if you're interested, proceed with caution!
   </div>
 </div>
         <div className="flex flex-col gap-y-3 h-full scrollbar-hidden">

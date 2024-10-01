@@ -9,15 +9,15 @@ const Footer = () => {
       </p>
       <p className="flex items-center">
         <Bug className="m-1"  size={10} />
-        <a href="https://github.com/your-repo/issues" className="ml-1">Report a Bug</a>
+        <a href="https://github.com/RishikesavanRamesh/R2PPA/issues" className="ml-1">Report a Bug</a>
       </p>
       <p className="flex items-center">
         <Key className="m-1"  size={10} />
-        <a href="/path/to/release.gpg" className="ml-1">Public Key</a>
+        <a href="./../.././public.key" className="ml-1">Public Key</a>
       </p>
       <p className="flex items-center">
         <FileText className="m-1"  size={10} />
-        <a href="/path/to/release.gpg" className="ml-1">Release GPG</a>
+        <a href="./../.././r2ppa/apt-repo/dists/stable/Release" className="ml-1">Release GPG</a>
       </p>
     </div>
   );
