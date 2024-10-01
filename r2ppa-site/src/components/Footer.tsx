@@ -9,7 +9,9 @@ const Footer = () => {
       </p>
       <p className="flex items-center">
         <Bug className="m-1"  size={10} />
-        <a href="https://github.com/RishikesavanRamesh/R2PPA/issues" className="ml-1">Report a Bug</a>
+        <a href="https://github.com/RishikesavanRamesh/R2PPA/issues" 
+            target="_blank" 
+            rel="noopener noreferrer"  className="ml-1">Report a Bug</a>
       </p>
       <p className="flex items-center">
         <Key className="m-1"  size={10} />
