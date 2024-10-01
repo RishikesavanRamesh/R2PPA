@@ -2,8 +2,8 @@ import { Check, Copy } from "lucide-react";
 import { useState } from "react";
 
 const Instruction = () => {
-  const keyText = `sudo wget -O - https://rishikesavanramesh.github.io/IDENTITY/gpg.key | sudo apt-key add -
-echo "deb [arch=amd64 signed-by=/example.pgp] https://rishikesavanramesh.github.io/R2PPA/r2ppa/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/example.list
+  const keyText = `sudo wget -O - https://rishikesavanramesh.github.io/R2PPA/public.key | sudo gpg --dearmor -o /usr/share/keyrings/example.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/example.gpg] https://rishikesavanramesh.github.io/R2PPA/r2ppa/apt-repo stable main" > /etc/apt/sources.list.d/example.list
 sudo apt update`;
 
   const installText =     <>
