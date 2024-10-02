@@ -1,0 +1,8 @@
+services:
+  aptrepo:
+    container_name: local-gh-page
+    image: r2ppa-gh-pages:latest
+    ports:
+      - 127.0.0.1:8000:8000
+    hostname: gh-page
+
