@@ -105,6 +105,7 @@ test:
 
 
 push-to-gh:
+    ARG --required github_token
     WORKDIR /app
     RUN apt-get update && apt-get install -y git
     COPY +build-site/gh-repo ./gh-repo
@@ -113,7 +114,8 @@ push-to-gh:
     RUN git config --global user.name "bot"
     RUN git init
     RUN git add .
-    RUN git commit -m "Earthly CI build: $(date)"
+    RUN git commit -m "Automated gh-page build"
     RUN git checkout -b gh-page
-    RUN git remote add origin https://rishikesavanramesh:<github-token>@github.com/rishikesavanramesh/R2PPA.git
+    RUN git remote add origin https://rishikesavanramesh:$github_token@github.com/rishikesavanramesh/R2PPA.git
     RUN git push -f origin gh-page
+
