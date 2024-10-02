@@ -11,7 +11,7 @@ PROJECT earthly-sa/earthly-vs-gha
 
 build-all-binaries:
     WORKDIR /binaries
-    COPY https://github.com/rishikesavanramesh/SWERVE-DRIVE/+swerve-bot-humble-packages/build-bed/*.deb .
+    COPY https://github.com/rishikesavanramesh/SWERVE-DRIVE:main+swerve-bot-humble-packages/build-bed/*.deb .
     # COPY https://github.com/rishikesavanramesh/PROJECT-2/+build-all/binaries .
     # COPY https://github.com/rishikesavanramesh/PROJECT-3/+build-all/binaries .
 
