@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Instruction = () => {
   const keyText = `sudo wget -O - https://rishikesavanramesh.github.io/R2PPA/public.key | sudo gpg --dearmor -o /usr/share/keyrings/r2ppa-repo.gpg
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/r2ppa-repo.gpg] https://rishikesavanramesh.github.io/R2PPA/r2ppa/apt-repo stable main" > /etc/apt/sources.list.d/example.list
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/r2ppa-repo.gpg] https://rishikesavanramesh.github.io/R2PPA/r2ppa/apt-repo stable main" > /etc/apt/sources.list.d/r2ppa-repo.list
 sudo apt update`;
 
   const installText =     <>
