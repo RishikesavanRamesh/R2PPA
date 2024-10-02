@@ -1,6 +1,6 @@
 # .github/workflows/ci.yml
 
-name: Earthly +build
+name: Earthly +push-to-gh
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
     # - name: Docker Login
     #   run: docker login --username "$DOCKERHUB_USERNAME" --password "$DOCKERHUB_TOKEN"
     - name: Run build
-      run: earthly --ci +push-to-gh --github_token=${{ secrets.GITHUB_TOKEN }}
+      run: earthly --ci +push-to-gh --github_token=${{ secrets.ACCESS_TOKEN }}
