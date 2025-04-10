@@ -23,7 +23,7 @@ jobs:
     - uses: earthly/actions-setup@v1
       with:
         version: v0.8.0
-        github-token: ${{ secrets.GH_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         
     - uses: actions/checkout@v4
     # - name: Docker Login
