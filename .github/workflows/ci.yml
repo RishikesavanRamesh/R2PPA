@@ -26,6 +26,15 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         
     - uses: actions/checkout@v4
+    
+    - name: Setup SSH key for Git access
+      uses: webfactory/ssh-agent@v0.9.0
+      with:
+        ssh-private-key: ${{ secrets.GH_TOKEN }}
+
+    - name: Add GitHub to known_hosts (optional, but good practice)
+      run: ssh-keyscan github.com >> ~/.ssh/known_hosts
+      
     # - name: Docker Login
     #   run: docker login --username "$DOCKERHUB_USERNAME" --password "$DOCKERHUB_TOKEN"
     - name: Run build
