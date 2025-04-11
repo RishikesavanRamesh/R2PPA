@@ -30,7 +30,7 @@ jobs:
     - name: Setup SSH key for Git access
       uses: webfactory/ssh-agent@v0.9.0
       with:
-        ssh-private-key: ${{ secrets.GH_TOKEN }}
+        ssh-private-key: ${{ secrets.SSH_GH_ACCESS_TOKEN }}
 
     - name: Add GitHub to known_hosts (optional, but good practice)
       run: ssh-keyscan github.com >> ~/.ssh/known_hosts
