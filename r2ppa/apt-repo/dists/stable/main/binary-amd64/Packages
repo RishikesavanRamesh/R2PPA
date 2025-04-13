@@ -1,0 +1,133 @@
+Package: ros-humble-ar100
+Version: 0.1.0-0jammy
+Architecture: amd64
+Maintainer: Anscer <anscer@anscer.com>
+Installed-Size: 41
+Depends: ros-humble-ar100-bringup, ros-humble-ar100-description, ros-humble-ar100-gazebo, ros-humble-ar100-navigation, ros-humble-ar100-slam
+Filename: pool/main/binary-amd64/ros-humble-ar100_0.1.0-0jammy_amd64.deb
+Size: 4888
+MD5sum: dd6d45d0a24be066dc47407f7718e38f
+SHA1: 0f8ced27c47ac4a21af812b1ae53a5dc66c927de
+SHA256: 81944c8efa2eb34064894ffa2e369e8d0befb6b053752531964671f94a25a9cb
+Section: misc
+Priority: optional
+Description: The AR100 metapackage
+
+Package: ros-humble-ar100-bringup
+Version: 0.1.0-0jammy
+Architecture: amd64
+Maintainer: Anscer <anscer@anscer.com>
+Installed-Size: 92
+Depends: ros-humble-ar100-description, ros-humble-controller-manager, ros-humble-forward-command-controller, ros-humble-joint-state-broadcaster, ros-humble-joint-trajectory-controller, ros-humble-robot-state-publisher, ros-humble-ros-gz-bridge, ros-humble-ros-gz-sim, ros-humble-ros-ign-gazebo, ros-humble-ros2-controllers-test-nodes, ros-humble-rviz2, ros-humble-xacro
+Filename: pool/main/binary-amd64/ros-humble-ar100-bringup_0.1.0-0jammy_amd64.deb
+Size: 12264
+MD5sum: f6430372e97c1c0b26234574d58a51ea
+SHA1: 24a11ae1c774031f3d17047a2b62134fcf3c462f
+SHA256: 5d2fcd4e0491aca3f95d9d64d3983d4d96e0c0b2109fb33214192b61115f10c5
+Section: misc
+Priority: optional
+Description: AR100 bringup package
+
+Package: ros-humble-ar100-description
+Version: 0.1.0-0jammy
+Architecture: amd64
+Maintainer: Anscer <anscer@anscer.com>
+Installed-Size: 504
+Depends: ros-humble-ign-ros2-control, ros-humble-joint-state-publisher-gui, ros-humble-robot-state-publisher, ros-humble-ros2-control, ros-humble-ros2-controllers, ros-humble-rviz2, ros-humble-xacro
+Filename: pool/main/binary-amd64/ros-humble-ar100-description_0.1.0-0jammy_amd64.deb
+Size: 118940
+MD5sum: 4ce2f366ba792ab9bd7f11a663d12471
+SHA1: e2b64d75c65ad975055fb6b5414633b957731c74
+SHA256: 0cf5506383faa573cb8c131e742b262a283b5868544570b0da2cd7f28a24ef10
+Section: misc
+Priority: optional
+Description: AR100 description package
+
+Package: ros-humble-ar100-gazebo
+Version: 0.1.0-0jammy
+Architecture: amd64
+Maintainer: Anscer <anscer@anscer.com>
+Installed-Size: 63
+Filename: pool/main/binary-amd64/ros-humble-ar100-gazebo_0.1.0-0jammy_amd64.deb
+Size: 6534
+MD5sum: c79a29fefa17b540dab2d6184b0a5cee
+SHA1: 697a31316e52acf9eea2b9f9a39906ca95378cbf
+SHA256: a12c79b44dd67744e5183ae37be6343c17a8409de2d09202118d2a933b286137
+Section: misc
+Priority: optional
+Description: The AR100 gazebo package
+
+Package: ros-humble-ar100-navigation
+Version: 0.1.0-0jammy
+Architecture: amd64
+Maintainer: Anscer <anscer@anscer.com>
+Installed-Size: 237
+Depends: ros-humble-nav2-bringup, ros-humble-navigation2
+Filename: pool/main/binary-amd64/ros-humble-ar100-navigation_0.1.0-0jammy_amd64.deb
+Size: 7188
+MD5sum: 79606968df37a053ae21795f7b168052
+SHA1: 993f70eb205f2946debea8c70ac7623ce947cedb
+SHA256: b2899942bca0226ed7570f0f4cf44f93555c35499af6a0151cf553eaf6036e3c
+Section: misc
+Priority: optional
+Description: AR100
+
+Package: ros-humble-ar100-slam
+Version: 0.1.0-0jammy
+Architecture: amd64
+Maintainer: Anscer <anscer@anscer.com>
+Installed-Size: 45
+Depends: ros-humble-nav2-bringup, ros-humble-slam-toolbox
+Filename: pool/main/binary-amd64/ros-humble-ar100-slam_0.1.0-0jammy_amd64.deb
+Size: 5398
+MD5sum: b49ac681e6b3611457839942bb905641
+SHA1: ecb2a703b4801439349bbc4fc05c699e6a09b2c6
+SHA256: ac699d72aef0cbca3bb8abcb836b8edb3d3114394f9642257ebe03ec226580bc
+Section: misc
+Priority: optional
+Description: AR100 slam package
+
+Package: ros-humble-swerve-drive-core
+Version: 1.0.0-0jammy
+Architecture: amd64
+Maintainer: RishikesavanRamesh <rishikesavanramesh@proton.me>
+Installed-Size: 41
+Filename: pool/main/binary-amd64/ros-humble-swerve-drive-core_1.0.0-0jammy_amd64.deb
+Size: 4936
+MD5sum: 12312de0ded177e9e59dad1e70ebdb02
+SHA1: d8a6cfe03df555c6e3c5d3560cece1d297d09afb
+SHA256: b89d53aa31d40ec491fa6de8f372c1a7236d6a0ee8e97a35bb765bc84e2ce011
+Section: misc
+Priority: optional
+Description: Swerve Drive Kinematics core logic abstracted for reuse
+
+Package: ros-humble-swervebot-bringup
+Version: 0.0.0-0jammy
+Architecture: amd64
+Maintainer: RishikesavanRamesh <rishikesavanramesh@proton.me>
+Installed-Size: 70
+Depends: ros-humble-controller-manager, ros-humble-forward-command-controller, ros-humble-joint-state-broadcaster, ros-humble-joint-trajectory-controller, ros-humble-robot-state-publisher, ros-humble-ros2-controllers-test-nodes, ros-humble-rviz2, ros-humble-xacro
+Filename: pool/main/binary-amd64/ros-humble-swervebot-bringup_0.0.0-0jammy_amd64.deb
+Size: 8946
+MD5sum: e26bdf9ad8632e1051b9e72009047b2a
+SHA1: 089b47bed9055f9be2cb51cc44261a4e33a1d7e7
+SHA256: b2037981dc5515979458dab1d93a6deacbd9b76377bee31e2a1e53622ac30c86
+Section: misc
+Priority: optional
+Description: A
+
+Package: ros-humble-swervebot-description
+Version: 0.0.0-0jammy
+Architecture: amd64
+Maintainer: RishikesavanRamesh <rishikesavanramesh@proton.me>
+Installed-Size: 688
+Depends: ros-humble-joint-state-publisher-gui, ros-humble-robot-state-publisher, ros-humble-rviz2, ros-humble-xacro
+Filename: pool/main/binary-amd64/ros-humble-swervebot-description_0.0.0-0jammy_amd64.deb
+Size: 158126
+MD5sum: ca4c272d0bf85f95f60f1968085f549d
+SHA1: 25b4e749bcc99fcbf364ed916674620588f89934
+SHA256: 36d028d3dbc56cdab845df4856eb3b4192a8b3666d76926b0c3bbb34400397ac
+Section: misc
+Priority: optional
+Description: swerve drive 4 wheels bot robot description
+
